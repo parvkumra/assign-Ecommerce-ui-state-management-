@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Cart from "./components/Cart";
 import Product from "./components/Product";
-import Layout from "./components/Layout"; // Import your Layout component
+import Layout from "./components/Layout"; 
 import { useState } from "react";
 import { CartContext } from "./context/CartContext";
 

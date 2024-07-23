@@ -10,7 +10,7 @@ function Navbar() {
   const handleclick = () => {
     navigate("/cart");
   };
-  const { cart } = useContext(CartContext); // Destructure only the `cart` from context
+  const { cart } = useContext(CartContext); 
   const hl=()=>{
     var element=document.getElementById("h");
     element.scrollIntoView()
@@ -22,7 +22,7 @@ function Navbar() {
       {
         x: 0,
         duration: 2,
-        ease: 'bounce.out', // Use bounce easing to create a collision effect
+        ease: 'bounce.out', 
         delay: 1
       }
     );

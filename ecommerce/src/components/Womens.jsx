@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
-import ProductCard from './ProductCard'; // Adjust the import path if necessary
-import { CartContext } from '../context/CartContext'; // Adjust the import path if necessary
-
+import ProductCard from './ProductCard'; 
+import { CartContext } from '../context/CartContext'; 
 const womenProducts = [
     {
       id: 1,
@@ -82,7 +81,7 @@ const WomenWear = () => {
     const { cart, setCart } = useContext(CartContext);
 
     const handleAddToCart = (product) => {
-        setCart([...cart, product]); // Add product to cart
+        setCart([...cart, product]); 
     };
 
     return (

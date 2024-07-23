@@ -11,7 +11,7 @@ function Cart() {
   const handleQuantityChange = (id, delta) => {
     const item = cart.find(product => product.id === id);
     if (item) {
-      const newQuantity = Math.max(item.quantity + delta, 1); // Ensure quantity is at least 1
+      const newQuantity = Math.max(item.quantity + delta, 1); 
       updateQuantity(id, newQuantity);
     }
   };

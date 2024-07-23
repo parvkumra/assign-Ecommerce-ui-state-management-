@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { CartContext } from '../context/CartContext';
-import ProductCard from './ProductCard'; // Assuming ProductCard is in the same directory
+import ProductCard from './ProductCard'; 
 
 const products = [
     {
@@ -100,7 +100,7 @@ const Kids = () => {
     const { cart, setCart } = useContext(CartContext);
 
     const handleAddToCart = (product) => {
-        setCart([...cart, product]); // Add product to cart
+        setCart([...cart, product]); 
     };
 
     return (

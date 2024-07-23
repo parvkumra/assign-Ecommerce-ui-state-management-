@@ -7,7 +7,7 @@ const ProductCard = ({ product, onAddToCart }) => {
 
     const handleClick = () => {
         setAdded(true);
-        onAddToCart(product); // Call parent callback to add product to cart
+        onAddToCart(product); 
     };
 
     const handleNavigate = () => {
@@ -24,7 +24,7 @@ const ProductCard = ({ product, onAddToCart }) => {
             <p className="text-gray-600 mt-2">Sizes: {product.sizes.join(', ')}</p>
             <button
                 onClick={(e) => {
-                    e.stopPropagation(); // Prevent click event from triggering on parent div
+                    e.stopPropagation(); 
                     handleClick();
                 }}
                 className={`py-2 px-6 rounded mt-4 ${added ? 'bg-green-500' : 'bg-blue-500'} text-white hover:bg-blue-600 transition`}

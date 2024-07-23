@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import ProductCard from './ProductCard'; // Ensure correct path to ProductCard component
-
+import ProductCard from './ProductCard';
 const womenProducts = [
   {
     id: 1,
@@ -185,7 +184,7 @@ function Product() {
 
 
 
-  // Function to render related items based on the current product type
+  
   const renderRelatedItems = () => {
     const relatedProducts = currentType === 'women' ? womenProducts : kproducts;
     const filteredProducts = relatedProducts.filter(p => p.id !== parseInt(id)).slice(0, 3); // Display up to 3 related items
@@ -215,7 +214,7 @@ function Product() {
         </center>
       </div>
 
-      {/* Display related items section */}
+      
       {renderRelatedItems()}
     </div>
   );
